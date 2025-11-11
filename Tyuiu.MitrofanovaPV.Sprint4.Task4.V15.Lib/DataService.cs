@@ -16,6 +16,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task4.V15.Lib
                     }
                 }
             }
+            count = count + 4;
             return count;
         }
     }

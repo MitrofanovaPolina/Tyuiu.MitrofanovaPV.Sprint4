@@ -5,18 +5,18 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task5.V25.Lib
     {
         public int Calculate(int[,] matrix)
         {
-            int count = 0;
+            int sum = 0;
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    if (matrix[j, i] > 0)
+                    if (matrix[i, j] > 0)
                     {
-                        count += matrix[i,j];
+                        sum = sum + matrix[i, j];
                     }
                 }
             }
-            return count;
+            return sum;
         }
     }
 }

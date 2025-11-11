@@ -15,13 +15,7 @@ class Program
                 mtrx[i,j] = Convert.ToInt32(Console.ReadLine());
             }
         }
-        for (int i = 0; i < rows; i++)
-        {
-            for (int j = 0; j < columns; j++)
-            {
-                Console.Write($"{mtrx[i, j]} \t");
-            }
-        }
+        
         int res = ds.Calculate(mtrx);
         Console.WriteLine(res);
     }

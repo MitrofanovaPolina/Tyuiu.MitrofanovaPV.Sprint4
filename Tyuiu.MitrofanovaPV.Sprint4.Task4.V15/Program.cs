@@ -19,7 +19,7 @@ class Program
         {
             for (int j = 0; j < columns; j++)
             {
-                Console.Write($"{mtrx[i,j]} \t");
+                Console.Write($"{mtrx[i, j]} \t");
             }
         }
         int res = ds.Calculate(mtrx);

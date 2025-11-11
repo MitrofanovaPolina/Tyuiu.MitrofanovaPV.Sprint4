@@ -5,18 +5,9 @@ class Program
     {
        
         DataService ds = new DataService();
-        int rows = Convert.ToInt32(Console.ReadLine());
-        int columns = Convert.ToInt32(Console.ReadLine());
-        int[,] mtrx = new int [rows, columns];
-        for (int i = 0; i < rows; i++)
-        {
-            for (int j = 0; j < columns; j++)
-            {
-                mtrx[i,j] = Convert.ToInt32(Console.ReadLine());
-            }
-        }
+        int[,] matrix = { { 4, 2, 5, 5, 3 }, { 4, 2, 5, 2, 2 }, { 3, 6, 4, 2, 4 }, { 3, 6, 4, 5, 4 }, { 2, 4, 6, 4, 2 } };
         
-        int res = ds.Calculate(mtrx);
+        int res = ds.Calculate(matrix);
         Console.WriteLine(res);
     }
 }

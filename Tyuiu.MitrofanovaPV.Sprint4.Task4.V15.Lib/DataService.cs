@@ -12,7 +12,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task4.V15.Lib
                 {
                     if (matrix[j, i] %2 != 0)
                     {
-                        count += matrix[i, j];
+                        count = matrix[i, j] + count;
                     }
                 }
             }

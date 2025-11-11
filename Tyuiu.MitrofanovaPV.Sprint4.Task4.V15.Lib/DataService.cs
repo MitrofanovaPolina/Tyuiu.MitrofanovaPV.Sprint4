@@ -6,13 +6,13 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task4.V15.Lib
         public int Calculate(int[,] matrix)
         {
             int count = 0;
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i<5;i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j<5; j++)
                 {
-                    if (matrix[i, j] % 2 != 0)
+                    if (matrix[j, i] %2 != 0)
                     {
-                        count++;
+                        count += matrix[i, j];
                     }
                 }
             }

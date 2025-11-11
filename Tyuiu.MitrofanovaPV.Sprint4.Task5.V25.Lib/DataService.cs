@@ -12,11 +12,10 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task5.V25.Lib
                 {
                     if (matrix[j, i] > 0)
                     {
-                        count = matrix[i, j] + count;
+                        count += matrix[i,j];
                     }
                 }
             }
-            count = count + 4;
             return count;
         }
     }

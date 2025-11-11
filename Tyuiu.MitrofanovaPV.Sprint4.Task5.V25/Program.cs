@@ -8,15 +8,23 @@ class Program
         Random rnd = new Random();
         int rows = Convert.ToInt32(Console.ReadLine());
         int cols = Convert.ToInt32(Console.ReadLine());
-        int[,] mtrx = new int[rows, cols];
+        int[,] matrix = new int[rows, cols];
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < cols; j++)
             {
-                mtrx[i, j] = rnd.Next(-4, 3);
+                matrix[i, j] = rnd.Next(1, 3);
             }
         }
-        int res = ds.Calculate(mtrx);
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                Console.Write($"{matrix[i, j]}\t");
+            }
+        }
+        int res = ds.Calculate(matrix);
         Console.WriteLine(res);
+
     }
 }

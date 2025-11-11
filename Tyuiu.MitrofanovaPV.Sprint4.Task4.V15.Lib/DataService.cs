@@ -5,14 +5,12 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task4.V15.Lib
     {
         public int Calculate(int[,] matrix)
         {
-            int rows = matrix.GetLength(0);
-            int columns = matrix.Length / rows;
             int count = 0;
-            for (int i = 0; i < rows; i++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < columns; j++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (matrix[i,j] != 0)
+                    if (matrix[i, j] % 2 != 0)
                     {
                         count++;
                     }

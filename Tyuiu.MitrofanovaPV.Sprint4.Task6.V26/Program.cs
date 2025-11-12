@@ -5,14 +5,13 @@ class Program
     {
 
         DataService ds = new DataService();
-        string[]data = { "Тюмень", "Тамбов", "Томск", "Омск", "Орёл" };
-        foreach (string item  in data)
+        var city = new string[] { "Тюмень", "Тамбов", "Томск", "Омск", "Орёл" };
+        var res = ds.Calculate(city);
+        for (int i = 0; i < res.Length; i++)
         {
-            if (item.Length > 5)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(res[i]);
         }
+        
         
 
     }

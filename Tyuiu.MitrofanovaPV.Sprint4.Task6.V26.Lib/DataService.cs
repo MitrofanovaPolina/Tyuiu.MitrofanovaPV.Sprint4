@@ -5,8 +5,8 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task6.V26.Lib
     {
         public string[] Calculate(string[] array)
         {
-            string[] mas = Array.FindAll(array, x => x.Length == 6);
-            return mas;
+            string[] cities = Array.FindAll(array, x => x.Length == 6);
+            return cities;
         }
     }
 }

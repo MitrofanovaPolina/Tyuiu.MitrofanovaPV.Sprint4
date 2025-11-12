@@ -8,10 +8,10 @@ namespace Tyuiu.MitrofanovaPV.Sprint4.Task6.V26.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int[,] mas2 = new int[3, 3] { { 1, 2, 3 }, { 1, 2, 3 }, { 1, 2, 3 } };
-            int res = ds.Calculate(mas2);
-            int wait = 1;
-            Assert.AreEqual(wait, res);
+            var city = new string[] { "Тюмень", "Тамбов", "Томск", "Омск", "Орёл" };
+            var res = ds.Calculate(city);
+            var wait = new string[] { "Тюмень", "Тамбов" };
+            Assert.AreEqual(res, wait);
         }
     }
 }
